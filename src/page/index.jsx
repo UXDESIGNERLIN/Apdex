@@ -1,25 +1,22 @@
 import useService from "../hooks/useService";
 import data from '../data/host-app-data.json';
-//import data from '../data/test.json';
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
-  const [hosts, setHosts] = useState([]);
-  //const [loading, setLoading] = useState(true);
+  const [hosts, setHosts] = useState();
   const { getTopAppsByHost } = useService(data);
-  useEffect(() => {
-    //console.log(getTopAppsByHost(data), getTopAppsByHost(data)["e7bf58af-f0be.dallas.biz"])
-    setHosts(getTopAppsByHost(data));
+  useEffect(() => { 
+    setHosts(getTopAppsByHost(testHost));   
   }, []); 
-
-   const items = useMemo(() => {
-    return hosts.map((item, index) => <li key={index}>{Object.keys(item)}</li>);
-  }, [hosts]); 
+  const testHost = '95b346a0-17f4.abbigail.name'
+  
   return(
     <>
-    <ul>
-      {items}
-    </ul>
+    {hosts &&
+      <ul>
+        {hosts.map((item, index) => <li key={index}>{item.name}</li>)}
+      </ul>
+    }
     </>
   )
 }
