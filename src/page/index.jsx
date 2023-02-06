@@ -4,7 +4,7 @@ import useHostMap from "../hooks/useHostMap";
 import CardListGroup from "../components/CardListGroup";
 import ListItem from "../components/ListItem";
 const HomePage = () => {
-  const hostMap = useHostMap(data);
+  const { hostMap, addAppToHost } = useHostMap(data);
   const { getTopAppsByHost } = useService(hostMap, 25);
   const title = 'Apps by Host';
 
@@ -15,6 +15,7 @@ const HomePage = () => {
       {!hostMap.size ? 
         (<h1>Loading...</h1>) : 
         (<main>
+          <div></div>
           {[...hostMap].map(([hostName]) => (
             <CardListGroup key={hostName} host={hostName}>
               {(getTopAppsByHost(hostName) || []).slice(0, 5).map((app, index) => (
