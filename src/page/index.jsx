@@ -33,15 +33,15 @@ const HomePage = () => {
       <h3>{title}</h3>
       {!hostMap.size ? 
         (<h1>Loading...</h1>) : 
-        (<div>
-          {[...hostMap].map(([hostName, hostApps]) => (
+        (<main>
+          {[...hostMap].map(([hostName]) => (
             <CardListGroup key={hostName} host={hostName}>
-              {(hostApps || []).slice(0, 5).map((app, index) => (
+              {(getTopAppsByHost(hostName, hostMap) || []).slice(0, 5).map((app, index) => (
                 <ListItem key={index} app={app}></ListItem>
               ))}
             </CardListGroup>
           ))}
-        </div>) 
+        </main>) 
       }
     </section>
   )
