@@ -8,25 +8,6 @@ const HomePage = () => {
   const { getTopAppsByHost } = useService(data);
   const hostMap = useHostMap(data);
   const title = 'Apps by Host'
-
-/*   const getHostList = () => {
-    let hostList = [];
-    if (hostMap) {
-      for (const hostName of hostMap.keys()) {
-        hostList.push(
-          <div key={hostName}>
-            <h3>{hostName}</h3>
-            <ul>
-              {getTopAppsByHost(hostName,hostMap).slice(0,5).map((item, index) => (
-                <li key={index}>{item.name}</li>
-              ))}
-            </ul>
-          </div>
-        );
-      }
-    }
-    return hostList;
-  } */
   
   return(
     <section>
