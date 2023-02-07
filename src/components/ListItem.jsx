@@ -1,7 +1,12 @@
-const ListItem = ({ app }) => {
+const ListItem = ({ app, toggleDialog }) => {
   const {apdex, name} = app;
+
+  const handleDialog = () => {
+    toggleDialog(app)
+  }
+  
   return(
-    <li>
+    <li aria-labelledby={`app-${name}`} onClick={handleDialog}>
       <span>{apdex}</span>
       <span>{name}</span>
     </li>

@@ -1,11 +1,14 @@
-const desiredList = 25;
+const useService = (data, desiredList) => {
+  const getTopAppsByHost = (hostname) => data.get(hostname).slice(0, desiredList);
 
-const useService = () => {
-  const getTopAppsByHost = (hostname, collecton) => collecton.get(hostname).slice(0, desiredList)
-  
+/*   const addAppToHost = (app) => {
+    const hostApps = data.get(hostname) || [];
+    setHostMap(new Map(hostMap).set(hostname, [...hostApps, app]));
+  }; */
 
   return {
-    getTopAppsByHost
+    getTopAppsByHost,
+    //addAppToHost
   };
 };
 
