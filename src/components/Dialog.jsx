@@ -8,10 +8,15 @@ const Dialog = ({ appClicked, toggleDialog }) => {
   }
 
   return (
-    <div role="dialog" aria-labelledby="dialogTitle" aria-describedby="dialogDescription" className="Dialog">
+    <div 
+      role="dialog" 
+      aria-labelledby="dialogTitle" 
+      aria-describedby="dialogDescription" 
+      className="Dialog"
+    >
     <div className="Dialog__content">
-      <h2 id="dialogTitle">{name}</h2>
-      <p id="dialogDescription">{`Release version ${version}`}</p>
+      <h2>{name}</h2>
+      <p>{`Release version ${version}`}</p>
       <button onClick={handleClose}>Close</button>
     </div>
   </div>

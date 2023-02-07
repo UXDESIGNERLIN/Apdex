@@ -1,15 +1,31 @@
+/// COLORS
+$color-white: #fff;
+$color-black: #0000;
+$color-grayish:#4a4a4a;
+$color-light-gray: #f6f6f4;
+$color-enable: #95ce10;
+$color-info: #e6f7c5;
+
 /// FONTS
-$font-face-default: "HelveticaNeue";
-$font-face-bold: "HelveticaNeue-Bold";
+$font-family-default: "HelveticaNeue";
+$font-family-bold: "HelveticaNeue-Bold";
 
 /// FONT SIZE
 $font-base: 16px;
 $font-size-m: 18px;
 $font-size-l: 35px;
+$font-size-s: 13px;
 
-/// Padding
-$padding-base: 30px;
-$padding-m: 23px;
+/// Spacing UTILITIES
+$space-base: 30px;
+$space-s: 10px;
+$space-m: 23px;
+
+/// LINE HEIGHT
+$line-height-default: 19px;
+$line-height-m: 22px;
+$line-height-xl: 43px;
+
 
 
 

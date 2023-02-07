@@ -1,0 +1,17 @@
+@import "../assets/scss/main.scss";
+
+.CardListGroup {
+  background-color: $color-white;
+  padding: $space-base;
+
+  h3 {
+    margin: 0;
+    font-size: $font-base;
+    font-family: $font-family-bold;
+    line-height: $line-height-default;
+  }
+
+  ul {
+    padding: 0;
+  }
+}

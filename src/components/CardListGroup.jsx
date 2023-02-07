@@ -1,10 +1,12 @@
-const Card = ({ children, host }) => {
+import './CardListGroup.scss'
+
+const CardListGroup = ({ children, host }) => {
   return(
-  <div>
+  <div className="CardListGroup">
     <h3>{host}</h3>
     <ul>{children}</ul>
   </div>
   )
 }
 
-export default Card;
+export default CardListGroup;

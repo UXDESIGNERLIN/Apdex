@@ -8,6 +8,7 @@ import { useState } from "react";
 import Dialog from "../components/Dialog";
 import Checkbox from "../components/Checkbox";
 import Header from "../components/Header";
+import './index.scss';
 
 const HomePage = () => {
   const { hostMap, addAppToHosts, removeAppFromHosts } = useHostMap(data);
@@ -43,7 +44,7 @@ const HomePage = () => {
       </Header>
       {!hostMap.size ? 
         (<h2 aria-live="polite">Loading...</h2>) : 
-        (<section>
+        (<section className="Section__container">
           {[...hostMap].map(([hostName]) => (
             <CardListGroup key={hostName} host={hostName}>
               {(getTopAppsByHost(hostName) || []).slice(0, 5).map((app, index) => (

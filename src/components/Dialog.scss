@@ -7,22 +7,22 @@
   bottom: 0;
 
   &__content {
-    display: grid;
-    grid-column: 2;
-    grid-row: 2;
-    align-self: center;
-    padding: 0 0 1.25em;
+    min-width: 50%;
+    padding: $space-base;
     border-radius: 10px;
-    width: 50%;
-    height: 50%;
     position: fixed;
+    align-items: baseline;
     @include in-the-middle;
-    background-color: rgb(232, 224, 224);
+    background-color: $color-info;
     overflow:auto;
 
     & button {
-      max-width: 50%; 
-      min-width: 30%;
+      padding: $space-s;
+      max-width: 45%; 
+      border-radius: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     
   }

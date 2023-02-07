@@ -1,4 +1,8 @@
+@import "../assets/scss/main.scss";
 
 .Header {
-  @include flex-middle
+  @include flex-center;
+  h1{
+    font-size: $font-size-l;
+}
 }

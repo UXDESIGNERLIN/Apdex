@@ -1,0 +1,29 @@
+@import "../assets/scss/main.scss";
+
+.ListItem {
+  list-style: none;
+  color: $color-grayish;
+  margin-bottom: $space-m;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__apdex {
+    font-family: $font-family-bold;
+    font-size: $font-size-s;
+    margin-right: $space-m;
+    opacity: 62%;
+    line-height: $line-height-default;
+  }
+
+  &__name {
+    font-size: $font-base;
+    line-height: $line-height-default;
+  }
+}
