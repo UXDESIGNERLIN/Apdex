@@ -1,19 +1,24 @@
 const hostsCollection = (data = []) => {
-  const hostMap = new Map();
+  const hostCounts = new Map();
+  const hostApps = new Map();
 
   data.forEach((app) => {
     app.host.forEach((host) => {
-      if (hostMap.has(host)) {
-        hostMap.get(host).push(app);
+      if (hostCounts.has(host)) {
+        hostCounts.set(host, hostCounts.get(host) + 1);
       } else {
-        hostMap.set(host, [app]);
+        hostCounts.set(host, 1);
+        hostApps.set(host, []);
       }
+      hostApps.get(host).push(app);
     });
   });
-  hostMap.forEach((apps) => {
-    apps.sort((a, b) => b.apdex - a.apdex)
+
+  hostApps.forEach((apps, host) => {
+    hostApps.set(host, apps.sort((a, b) => b.apdex - a.apdex));
   });
-  return hostMap;
+
+  return hostApps;
 };
 
 export default hostsCollection;
