@@ -11,7 +11,7 @@ const Checkbox = ({ showGrid, label, toggleLayout }) => {
       <input type="checkbox" id={label} value="None" name="check" onChange={handleInput}/>
       <label htmlFor={label}></label>
     </div>
-    <span>{showGrid ? 'Show as awesome grid' : 'Show as list'}</span>
+    <span className="Checkbox__title">{showGrid ? 'Show as an awesome grid' : 'Show as list'}</span>
     </div>
   )
 }

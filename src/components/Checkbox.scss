@@ -2,9 +2,14 @@
 
 .Checkbox {
   @include flex-center;
+  
   &--checked {
     min-width: $space-h;
     @include flex-center;
+  }
+
+  &__title {
+    font-size: 12px;
   }
 }
 

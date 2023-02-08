@@ -1,18 +1,22 @@
 @import "../assets/scss/main.scss";
 
 .Header {
-  @include flex-center;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: $space-base;
+  justify-content: flex-start;
 
   h1{
     font-size: $font-size-l;
     font-family: $font-family-bold;
     line-height: $line-height-xl;
-    min-width: 30%;
+    min-width: 31%;
   }
 
   p{
     font-size: $font-size-m;
     line-height: $line-height-m;
+    margin-right: $space-base;
     @include truncate;
   }
 }

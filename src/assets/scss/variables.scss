@@ -8,8 +8,8 @@ $color-enable: #95ce10;
 $color-info: #e6f7c5;
 
 /// FONTS
-$font-family-default: "HelveticaNeue";
-$font-family-bold: "HelveticaNeue-Bold";
+$font-family-default: "HelveticaNeue", sans-serif;
+$font-family-bold: "HelveticaNeue-Bold", sans-serif;
 
 /// FONT SIZE
 $font-base: 16px;
@@ -25,7 +25,7 @@ $space-sm: 15px;
 $space-m: 23px;
 
 /// Spacing Higher units
-$space-h: 170px;
+$space-h: 165px;
 
 /// LINE HEIGHT
 $line-height-default: 19px;

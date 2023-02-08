@@ -4,9 +4,12 @@ html,
 body {
   font-family: $font-family-default;
   font-size: $font-base;
-  margin: $space-base;
   height: 100%;
   background-color: $color-light-gray
+}
+
+body {
+  margin: $space-base;
 }
 
 .Section__container {
