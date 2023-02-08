@@ -2,6 +2,7 @@
 $color-white: #fff;
 $color-black: #0000;
 $color-grayish:#4a4a4a;
+$color-slight-grayish: #e8e6ef;
 $color-light-gray: #f6f6f4;
 $color-enable: #95ce10;
 $color-info: #e6f7c5;
@@ -18,8 +19,13 @@ $font-size-s: 13px;
 
 /// Spacing UTILITIES
 $space-base: 30px;
+$space-ss: 5px;
 $space-s: 10px;
+$space-sm: 15px;
 $space-m: 23px;
+
+/// Spacing Higher units
+$space-h: 170px;
 
 /// LINE HEIGHT
 $line-height-default: 19px;
