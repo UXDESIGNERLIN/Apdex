@@ -3,27 +3,28 @@
 .Checkbox {
   @include flex-center;
   &--checked {
-    min-width: 170px;
+    min-width: $space-h;
     @include flex-center;
   }
 }
 
 .Checkbox__box {
-  width: 15px;
-  height: 15px;
-  margin: 5px auto;
+  width: $space-sm;
+  height: $space-sm;
+  margin-right: $space-ss;
   background: $color-white;
   position: relative;
+  border: 1px solid $color-slight-grayish;
   
   label {
-    width: 10px;
-    height: 10px;
+    width: $space-s;
+    height: $space-s;
     @include in-the-middle;
     
     &:after {
       content: '';
-      width: 10px;
-      height: 10px;
+      width: $space-s;
+      height: $space-s;
       @include in-the-middle;
       background-color: $color-enable;
       opacity: 0;
