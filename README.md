@@ -13,10 +13,10 @@ The file structure, I group files according to the types. In the components, I h
 ### Big O
 
 The time and space complexity for the data modeling solution is O(n).
-
 ### Lighthouse Performance
 
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/42298152/217593986-1007cd7e-e5e8-4928-a3ac-894a47b050d0.png">
+<img width="550" alt="image" src="https://user-images.githubusercontent.com/42298152/217593986-1007cd7e-e5e8-4928-a3ac-894a47b050d0.png">
+
 ### Browser Support 
 
 |  Browser |  List  | Grid  | 
