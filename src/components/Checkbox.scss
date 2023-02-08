@@ -1,0 +1,35 @@
+@import "../assets/scss/main.scss";
+
+.Checkbox {
+  display: flex;
+}
+
+.Checkbox__box {
+  width: 15px;
+  height: 15px;
+  margin: 5px auto;
+  background: $color-white;
+  position: relative;
+  
+  label {
+    width: 10px;
+    height: 10px;
+    @include in-the-middle;
+    
+    &:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      @include in-the-middle;
+      background-color: $color-enable;
+      opacity: 0;
+    }
+  }
+
+  input[type=checkbox] {
+    appearance: none;
+    &:checked + label:after {
+      opacity: 1;
+    }   
+  } 
+}

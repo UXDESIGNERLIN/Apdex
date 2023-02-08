@@ -2,7 +2,15 @@
 
 .Header {
   @include flex-center;
+
   h1{
     font-size: $font-size-l;
-}
+    font-family: $font-family-bold;
+    line-height: $line-height-xl;
+  }
+
+  p{
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+  }
 }
