@@ -1,9 +1,16 @@
 # Apdex
 
+### Stack
+
+This project is built with Create React App, Javascript and Sass.
+### Structure and decisions
+
+For the main view, I have it as HomePage and inside the page, we have components. Noted that I use mainly composition approach for reusing the components. Such approach can benefit us the flexibility when reusing the code. We can also build a easier scalability with this use, Let's say, we are required to add one some layers between components as features, thanks to composition, we have less consideration and construction in state lifting.
+
+For data modeling,
 ### Lighthouse Performance
 
 <img width="330" alt="image" src="https://user-images.githubusercontent.com/42298152/217593986-1007cd7e-e5e8-4928-a3ac-894a47b050d0.png">
-
 ### Browser Support 
 
 |  Browser |  List  | Grid  | 
