@@ -2,7 +2,7 @@
 
 This is assignment from NewRelic.
 Clone the repo, `npm install` and `npm run start`, then see the result at your `localhost:3000`.
-For quick result, you can see at the [Browser Support section](#BrowserSuport)
+For quick result, you can see at the [Browser Support section](#Browser%20Support)
 
 ### Stack
 
@@ -21,7 +21,7 @@ The time and space complexity for the data modeling solution is O(n).
 
 <img width="550" alt="image" src="https://user-images.githubusercontent.com/42298152/217593986-1007cd7e-e5e8-4928-a3ac-894a47b050d0.png">
 
-### BrowserSupport 
+### Browser Support 
 
 |  Browser |  List  | Grid  | 
 |---|---|---|
