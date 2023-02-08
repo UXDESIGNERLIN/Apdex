@@ -4,7 +4,7 @@ This is assignment from NewRelic.
 Clone the repo, `npm install` and `npm run start`, then see the result at your `localhost:3000`.
 For quick result, you can see at the [Browser Support](#browser-support)
 
-#[Stack](#stack)
+# [Stack](#stack)
 
 ### Stack
 
