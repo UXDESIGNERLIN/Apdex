@@ -14,3 +14,9 @@ Edge
 
 Safari
 <img width="434" alt="image" src="https://user-images.githubusercontent.com/42298152/217544431-84aebe7b-0d2a-42e7-8c52-5503f4394e27.png">
+
+LightHouse
+<img width="915" alt="image" src="https://user-images.githubusercontent.com/42298152/217593939-4f4ffacf-580a-4074-b681-afc39956a2ad.png">
+<img width="430" alt="image" src="https://user-images.githubusercontent.com/42298152/217593986-1007cd7e-e5e8-4928-a3ac-894a47b050d0.png">
+
+
