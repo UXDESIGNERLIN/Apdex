@@ -5,7 +5,6 @@ const useHostMap = (data) => {
   const [hostMap, setHostMap] = useState(new Map());
   
   useEffect(() => {
-    console.log('changing')
     setHostMap(hostsCollection(data));
   }, [data]);
 

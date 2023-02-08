@@ -1,4 +1,4 @@
-import useService from "../hooks/useService";
+import useTopApps from "../hooks/useTopApps";
 import data from '../data/host-app-data.json';
 import useHostMap from "../hooks/useHostMap";
 import CardListGroup from "../components/CardListGroup";
@@ -12,7 +12,7 @@ import './index.scss';
 
 const HomePage = () => {
   const { hostMap, addAppToHosts, removeAppFromHosts } = useHostMap(data);
-  const { getTopAppsByHost } = useService(hostMap, 25);
+  const { getTopAppsByHost } = useTopApps(hostMap, 25);
   const [isTrigger, setTrigger] = useState(false);
   const [appClicked, setAppClicked] = useState(null);
   const [showGrid, setShowGrid] = useState(false);
@@ -21,7 +21,7 @@ const HomePage = () => {
   const userEmail = 'averylongemailadress@companyname.com';
   const checkBoxLabel = 'toggleList';
 
-  const handleAdd = (env) => {
+  const handleAdd = () => {
     addAppToHosts(MOCK_APP);
   }
 
