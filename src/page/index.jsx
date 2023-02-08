@@ -8,7 +8,7 @@ import { useState } from "react";
 import Dialog from "../components/Dialog";
 import Checkbox from "../components/Checkbox";
 import Header from "../components/Header";
-import './index.scss';
+import './HomePage.scss';
 
 const HomePage = () => {
   const { hostMap, addAppToHosts, removeAppFromHosts } = useHostMap(data);
@@ -20,6 +20,7 @@ const HomePage = () => {
   const title = 'Apps by Host';
   const userEmail = 'averylongemailadress@companyname.com';
   const checkBoxLabel = 'toggleList';
+  const layout = showGrid ? 'Section__container--grid' : 'Section__container';
 
   // eslint-disable-next-line no-unused-vars
   const handleAdd = () => {
@@ -51,7 +52,7 @@ const HomePage = () => {
       </Header>
       {!hostMap.size ? 
         (<h2 aria-live="polite">Loading...</h2>) : 
-        (<section className={showGrid ? 'Section__container--grid' : 'Section__container'}>
+        (<section className={layout}>
           {[...hostMap].map(([hostName]) => (
             <CardListGroup key={hostName} host={hostName}>
               {(getTopAppsByHost(hostName) || []).slice(0, 5).map((app, index) => (
