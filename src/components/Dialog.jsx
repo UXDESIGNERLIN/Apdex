@@ -11,7 +11,6 @@ const Dialog = ({ appClicked, toggleDialog }) => {
     <div 
       role="dialog" 
       aria-labelledby="dialogTitle" 
-      aria-describedby="dialogDescription" 
       className="Dialog"
     >
     <div className="Dialog__content">

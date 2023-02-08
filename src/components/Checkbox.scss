@@ -2,9 +2,12 @@
 
 .Checkbox {
   @include flex-center;
-  
+
   &--checked {
     min-width: $space-h;
+    @include firefox {
+      min-width: calc( $space-h + 5px );
+    }
     @include flex-center;
   }
 

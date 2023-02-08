@@ -22,3 +22,9 @@
   grid-template-columns: repeat($cols, 1fr);
   gap: $space;
 }
+
+@mixin firefox {
+  @-moz-document url-prefix() {
+    @content;
+  }
+}
