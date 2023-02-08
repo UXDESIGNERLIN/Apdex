@@ -16,3 +16,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@mixin grid-layout($cols: 1, $space: $space-base) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+  gap: $space;
+}
