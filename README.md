@@ -5,6 +5,10 @@ Clone the repo, `npm install` and `npm run start`, then see the result at your `
 For quick result, you can see at the [Browser Support](#browser-support)
 
 * [Stack](#stack)
+* [Structure and decision](#structure-and-decisions)
+* [Big O](#big-o)
+* [Lighthouse Performance](#lighthouse-performance)
+* [Browser Support](#browser-support)
 
 ### Stack
 
@@ -19,7 +23,7 @@ The file structure, I group files according to the types. In the components, I h
 ### Big O
 
 The time and space complexity for the data modeling solution is O(n).
-##" Lighthouse Performance
+### Lighthouse Performance
 
 <img width="550" alt="image" src="https://user-images.githubusercontent.com/42298152/217593986-1007cd7e-e5e8-4928-a3ac-894a47b050d0.png">
 
