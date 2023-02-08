@@ -13,8 +13,8 @@ const Checkbox = ({ showGrid, label, toggleLayout }) => {
   return (
     <div className={defaultCheckbox.class}>
     <div className="Checkbox__box">
-      <input type="checkbox" id={label} value="None" name="check" onChange={handleInput}/>
-      <label htmlFor={label}></label>
+      <input type="checkbox" id="togglelist" aria-label={label} value="none" name="check" onChange={handleInput}/>
+      <label htmlFor="togglelist"></label>
     </div>
     <span className="Checkbox__title">{defaultCheckbox.title}</span>
     </div>
