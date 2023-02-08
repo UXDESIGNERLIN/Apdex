@@ -45,9 +45,7 @@ const HomePage = () => {
   return(
     <main>
       <Header title={title} userEmail={userEmail}>
-        <Checkbox label={checkBoxLabel} toggleLayout={toggleLayout}>
-          {showGrid ? 'Show as awesome grid' : 'Show as list'}
-        </Checkbox>
+        <Checkbox label={checkBoxLabel} toggleLayout={toggleLayout} showGrid={showGrid} />
       </Header>
       {!hostMap.size ? 
         (<h2 aria-live="polite">Loading...</h2>) : 

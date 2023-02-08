@@ -7,10 +7,12 @@
     font-size: $font-size-l;
     font-family: $font-family-bold;
     line-height: $line-height-xl;
+    min-width: 30%;
   }
 
   p{
     font-size: $font-size-m;
     line-height: $line-height-m;
+    @include truncate;
   }
 }

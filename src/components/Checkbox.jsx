@@ -1,17 +1,17 @@
 import './Checkbox.scss';
 
-const Checkbox = ({ children, label, toggleLayout }) => {
+const Checkbox = ({ showGrid, label, toggleLayout }) => {
   const handleInput = (event) => {
     toggleLayout(event.target.checked);
   }
 
   return (
-    <div class="Checkbox">
-    <div class="Checkbox__box">
+    <div className={showGrid ? 'Checkbox--checked' : 'Checkbox'}>
+    <div className="Checkbox__box">
       <input type="checkbox" id={label} value="None" name="check" onChange={handleInput}/>
-      <label for={label}></label>
+      <label htmlFor={label}></label>
     </div>
-    <span>{children}</span>
+    <span>{showGrid ? 'Show as awesome grid' : 'Show as list'}</span>
     </div>
   )
 }

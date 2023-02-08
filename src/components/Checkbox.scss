@@ -1,7 +1,11 @@
 @import "../assets/scss/main.scss";
 
 .Checkbox {
-  display: flex;
+  @include flex-center;
+  &--checked {
+    min-width: 170px;
+    @include flex-center;
+  }
 }
 
 .Checkbox__box {
