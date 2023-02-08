@@ -21,10 +21,12 @@ const HomePage = () => {
   const userEmail = 'averylongemailadress@companyname.com';
   const checkBoxLabel = 'toggleList';
 
+  // eslint-disable-next-line no-unused-vars
   const handleAdd = () => {
     addAppToHosts(MOCK_APP);
   }
 
+  // eslint-disable-next-line no-unused-vars
   const handleRemove = () => {
     removeAppFromHosts(MOCK_APP);
   }
