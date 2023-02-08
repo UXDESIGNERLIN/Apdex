@@ -1,5 +1,4 @@
 const hostsCollection = (data = []) => {
-  console.log('called collection')
   const hostMap = new Map();
 
   data.forEach((app) => {
