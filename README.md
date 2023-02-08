@@ -4,12 +4,12 @@
 
 |  Browser |  List  | Grid  | 
 |---|---|---|
-| Chrome  | <img width="400" alt="image" src="https://user-images.githubusercontent.com/42298152/217545129-e7d1d0d6-39c1-4c06-9488-203e9446489c.png">  | <img width="400" alt="image" src="https://user-images.githubusercontent.com/42298152/217545129-e7d1d0d6-39c1-4c06-9488-203e9446489c.png">  | 
+| Chrome  | <img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217545129-e7d1d0d6-39c1-4c06-9488-203e9446489c.png">  | <img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217545171-131cc690-9a30-4148-a074-f73d3993ae35.png">  | 
 |   |   |   | 
 |   |   |   | 
 |   |   |   |
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/42298152/217545129-e7d1d0d6-39c1-4c06-9488-203e9446489c.png">
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/42298152/217545171-131cc690-9a30-4148-a074-f73d3993ae35.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217545129-e7d1d0d6-39c1-4c06-9488-203e9446489c.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217545171-131cc690-9a30-4148-a074-f73d3993ae35.png">
 
 Firefox
 <img width="538" alt="image" src="https://user-images.githubusercontent.com/42298152/217545426-723ceea9-e1d2-414c-bf3a-9d5ef805aa44.png">
