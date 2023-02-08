@@ -9,7 +9,7 @@
   &__content {
     min-width: 50%;
     padding: $space-base;
-    border-radius: 10px;
+    border-radius:$border-radius-smooth;
     position: fixed;
     align-items: baseline;
     @include in-the-middle;
@@ -19,7 +19,7 @@
     & button {
       padding: $space-s;
       max-width: 45%; 
-      border-radius: 10px;
+      border-radius: $border-radius-smooth;
       position: absolute;
       left: 50%;
       transform: translate(-50%, -50%);
