@@ -18,6 +18,7 @@ const hostsCollection = (data = []) => {
     hostApps.set(host, apps.sort((a, b) => b.apdex - a.apdex));
   });
 
+  console.log('correct', hostApps)
   return hostApps;
 };
 
