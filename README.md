@@ -28,7 +28,7 @@ The file structure, I group files according to the types. In the components, I h
 
 ### Big O
 At first approach, 
-` (data = []) => {
+``` (data = []) => {
   const hostMap = new Map();
 
   data.forEach((app) => {
@@ -43,11 +43,13 @@ At first approach,
  ...
   return hostMap;
 };
-`
+```
 the time complexity is O(n²) because I was having nested loop.
 
-I then use two Maps, without nesting loop, I can do O(n + m), which is O(n)
-`const hostsCollection = (data = []) => {
+I then use two Maps, without nesting loop, one for updating the `hostCounts Map` and the other for updating the `hostApps Map`
+this way, it is O(n + m), which is O(n):
+
+```const hostsCollection = (data = []) => {
   const hostCounts = new Map();
   const hostApps = new Map();
 
@@ -64,7 +66,8 @@ I then use two Maps, without nesting loop, I can do O(n + m), which is O(n)
   });
  ...
   return hostApps;
-};`
+};```
+
 Conclusion: The time complexity for the data modeling solution is O(n).
 
 ### Lighthouse Performance
