@@ -6,6 +6,7 @@ For quick result, you can see at the [Browser Support](#browser-support)
 
 * [Stack](#stack)
 * [Structure and decision](#structure-and-decisions)
+* [File Structure](#file-structure)
 * [Big O](#big-o)
 * [Lighthouse Performance](#lighthouse-performance)
 * [Browser Support](#browser-support)
