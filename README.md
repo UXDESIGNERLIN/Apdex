@@ -68,7 +68,7 @@ this way, it is O(n + m), which is O(n):
   return hostApps;
 };
 ```
-Conclusion: The time complexity for the data modeling solution is O(n).
+👉Conclusion: The time complexity for the data modeling solution is O(n).
 
 ### Lighthouse Performance
 
