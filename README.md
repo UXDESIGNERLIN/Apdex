@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+### Apdex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is assignment from NewRelic.
+Clone the repo, `npm install` and `npm run start`, then see the result at your `localhost:3000`.
+For quick result, you can see at the [Browser Support](#browser-support)
 
-## Available Scripts
+* [Stack](#stack)
+* [Structure and decision](#structure-and-decisions)
+* [Big O](#big-o)
+* [Lighthouse Performance](#lighthouse-performance)
+* [Browser Support](#browser-support)
 
-In the project directory, you can run:
+### Stack
 
-### `npm start`
+This project is built with Create React App, Javascript and Sass.
+### Structure and decisions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For the main view, I have it as HomePage and inside the page, we have components. Noted that I use mainly composition approach for reusing the components. Such approach can benefit us the flexibility when reusing the code. We can also build a easier scalability with this use, Let's say, we are required to add one some layers between components as features, thanks to composition, we have less consideration and construction in state lifting.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For data modeling, I use Hash Map data structure [Map Collection](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map). In the collection, we have key value pair: the key is hostname and the value is arrays of application objects. Indeed, there are many ways of modeling such data, however Map gives me more intuitive here due to we only wants unique key and also for scaling, if at certain points, we decide to use numbers instead of string to represent hostname or any similar scenarios, Map collection offers us the benefit of storing not only string as the key.
 
-### `npm test`
+The file structure, I group files according to the types. In the components, I have many JSX and SCSS file around, it might be bit messy as feature grows and components added. If this project is serious, I will split all of the scss files into components of theme library and we can just reuse it from that.
+### Big O
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The time and space complexity for the data modeling solution is O(n).
+### Lighthouse Performance
 
-### `npm run build`
+<img width="550" alt="image" src="https://user-images.githubusercontent.com/42298152/217593986-1007cd7e-e5e8-4928-a3ac-894a47b050d0.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Browser Support 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+|  Browser |  List  | Grid  | 
+|---|---|---|
+| Chrome  | <img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217545129-e7d1d0d6-39c1-4c06-9488-203e9446489c.png">  | <img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217545171-131cc690-9a30-4148-a074-f73d3993ae35.png">  | 
+| FireFox  | <img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217545467-b02765ea-648a-4513-b347-5a5ab4e739f7.png">  | <img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217545426-723ceea9-e1d2-414c-bf3a-9d5ef805aa44.png">  | 
+| Edge  | <img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217545722-74f955ed-17a7-4ef2-b664-bd56147a6346.png">  | <img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217545686-2ed1ac29-f8a8-4449-b5ea-e2cf6b7bc066.png"> | 
+|Safari  |   | <img width="300" alt="image" src="https://user-images.githubusercontent.com/42298152/217544431-84aebe7b-0d2a-42e7-8c52-5503f4394e27.png">  |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
