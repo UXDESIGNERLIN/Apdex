@@ -1,6 +1,12 @@
 ### Apdex
 
-This is assignment from NewRelic.
+This is a practice with big nested data and how we organize the data to present how we want it by different hosts. 
+You can see the data in folder data and you will find that it has a list of applications with a name, a list of contributors, a release version number, and a list of
+hosts that the app has been deployed at.
+
+In the display of this page, it's a feature displaying the most satisfying applications deployed on
+each host.
+
 Clone the repo, `npm install` and `npm run start`, then see the result at your `localhost:3000`.
 For quick result, you can see at the [Browser Support](#browser-support)
 
